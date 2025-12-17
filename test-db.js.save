@@ -1,0 +1,17 @@
+const { Client } = require('pg');
+
+const client = new Client({
+  user: 'postgres',       // usuário padrão do PostgreSQL
+  host: 'localhost',
+  database: 'linguaplus', // nome do banco que você criou
+  password: '',            // se não tiver senha, deixe vazio; se tiver, coloque aqui
+  port: 5432,
+});
+
+client.connect()
+  .then(() => {
+    console.log('Conectado ao PostgreSQL com sucesso!');
+    return client.end();
+  })
+  .catch(err => console.error('Erro ao conectar:', err));
+

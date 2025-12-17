@@ -1,6 +1,10 @@
 {
   "dependencies": {
-    "express": "^5.2.1"
+    "body-parser": "^2.2.1",
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "express-session": "^1.18.2",
+    "pg": "^8.16.3"
   },
   "name": "linguaplus",
   "version": "1.0.0",

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cursos - LinguaPlus</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f4f6f8 url('MUNDOOO.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background: rgba(255,255,255,0.9);
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      color: #2c3e50;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #3498db;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #2980b9;
+    }
+    .courses {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px 20px;
+      gap: 20px;
+    }
+    .course-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      text-align: left;
+      transition: transform 0.2s;
+    }
+    .course-card:hover {
+      transform: translateY(-5px);
+    }
+    .course-card h2 {
+      color: #2c3e50;
+      font-size: 20px;
+      margin-top: 0;
+    }
+    .course-card p {
+      font-size: 14px;
+      color: #555;
+    }
+    .course-card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background: #3498db;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .course-card a:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>LinguaPlus 🌍</h1>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="inscricao.html">Inscrição</a>
+    <a href="login.html">Logout</a>
+  </nav>
+</header>
+
+<main>
+  <h2 style="margin-top:30px; color:#2c3e50;">Cursos Disponíveis</h2>
+  <div class="courses">
+    <div class="course-card">
+      <h2>Inglês </h2>
+      <p>Aprenda as bases do inglês com exercícios práticos e interativos.</p>
+      <a href="cursos-ingles.html">Acessar</a>
+    </div>
+    <div class="course-card">
+      <h2>Espanhol </h2>
+      <p>Aprenda  espanhol com conteúdos dinâmicos.</p>
+      <a href="cursos-espanhol.html">Acessar</a>
+    </div>
+    <div class="course-card">
+      <h2>Frances </h2>
+      <p>Introdução ao frances, vocabulário e expressões essenciais.</p>
+      <a href="cursos-frances.html">Acessar</a>
+  
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

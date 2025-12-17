@@ -2,15 +2,16 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Login - LinguaPlus</title>
+  <title>Cadastre-se - LinguaPlus</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="login-container">
-    <h1>Entrar no LinguaPlus</h1>
+    <h1>Cadastre-se no LinguaPlus</h1>
 
-    <form action="/login" method="post">
+    <form action="/inscrever" method="post">
+      <input type="text" name="nome" placeholder="Nome completo" required>
       <input type="email" name="email" placeholder="Email" required>
       <input type="password" name="senha" placeholder="Senha" required>
 
@@ -21,14 +22,11 @@
         <option value="frances">Francês</option>
       </select>
 
-      <button type="submit">Entrar</button>
+      <button type="submit">Cadastre-se</button>
     </form>
 
-    <p>Não tem conta? <a href="/inscricao">Cadastre-se</a></p>
+    <p>Já tem conta? <a href="/login">Entrar</a></p>
   </div>
 </body>
 </html>
-
-
-
 
